@@ -1,0 +1,169 @@
+/*vanilla-weather-app netlify*/
+h1 {
+  font-family: "Xanh Mono", monospace;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+h2,
+h3 {
+  font-family: "Xanh Mono", monospace;
+}
+
+li,
+p {
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+h1,
+h3,
+p {
+  text-align: center;
+}
+
+h1,
+h2 {
+  margin: 20px;
+  padding: 0px;
+}
+
+h2 {
+  font-size: 3em;
+  padding-top: 30px;
+}
+
+h3,
+p {
+  font-size: 2em;
+}
+
+.weather-container {
+  border: 10px outset #94b1aa;
+  padding: 15px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.weather-card {
+  width: 10rem;
+  border-style: none;
+  padding: 0px;
+  margin: 0px;
+  background-color: transparent;
+}
+
+.units-top {
+  position: relative;
+  top: -13px;
+}
+
+.unit-divider-top {
+  position: relative;
+  top: -13px;
+}
+
+.units {
+  position: relative;
+  top: -8px;
+  font-size: 1.5rem;
+}
+
+.degrees-top {
+  font-size: 54px;
+  line-height: 1;
+  position: relative;
+  top: 6px;
+}
+
+.degrees {
+  font-size: 34px;
+  line-height: 1;
+}
+
+.search-button {
+  background-color: #94b1aa;
+  color: #000;
+  font-size: 18px;
+}
+
+.search-button:hover {
+  background-color: rgb(44, 138, 138);
+}
+
+#local-time,
+#time p {
+  text-align: left;
+  font-size: 26px;
+}
+
+#time p {
+  padding-left: 20px;
+}
+
+#celsius-link {
+  text-decoration: none;
+  color: #202020;
+  font-size: 26px;
+}
+
+#fahrenheit-link {
+  text-decoration: none;
+  color: #202020;
+  opacity: 0.7;
+  font-size: 26px;
+}
+
+#fahrenheit-link:hover {
+  background-color: rgb(44, 138, 138);
+  color: #fff;
+}
+
+.list {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 26px;
+}
+
+#description {
+  text-align: left;
+  padding-left: 20px;
+}
+
+#description,
+#humidity,
+#wind {
+  font-size: 26px;
+}
+
+#weather-img {
+  width: 300px;
+  height: 200px;
+}
+
+#footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#footer p {
+  font-size: 18px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.logoTextSpan {
+  padding: 10px;
+}
