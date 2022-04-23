@@ -32,18 +32,25 @@
   <body>
     <div class="container">
       <div class="weather-container">
-        <form  class="search-form" id="search-form">
-         <div class="row">
-          <div class="col-10">
-            <div class="clear-fix">
-          <h1>Weather</h1>
-          </div>
-          <div class="col-1">
-            <div class="float-left">
-          <img class="img-fluid d-block" id="leaf-img" src="img/leaf.png" width="400" height="200" alt="An illustration of a leaf">
-        </div>
-           </div>
-          </div>
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-10">
+              <div class="clear-fix">
+                <h1>Weather</h1>
+              </div>
+              <div class="col-1">
+                <div class="float-left">
+                  <img
+                    class="img-fluid d-block"
+                    id="leaf-img"
+                    src="img/leaf.png"
+                    width="400"
+                    height="200"
+                    alt="An illustration of a leaf"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
           <div class="row">
             <div class="col-6 input-form">
@@ -62,39 +69,44 @@
                 class="form-control btn btn-outline-secondary shadow-sm search-button"
               />
             </div>
-            <!--<div class="col-3">
-              <button class="btn w-100" id="current-location-button">
-                Current Location
-              </button>
-            </div>
           </div>
-        </form>-->
+        </form>
         <h2 id="city-heading"></h2>
-          </div>
-          <div id="time">
-        <p><span id="local-time"></span></p></div>
+        <div id="time">
+          <p><span id="local-time"></span></p>
+        </div>
         <div class="row">
           <div class="col-3">
-        <ul class="list">
-          <li id="description"></li>
-        </ul>
-        <p>
-          <span class="degrees-top" id="degrees-top"></span>
-          <span class="units-top"><a href="#" id="celsius-link">°C</a></span>
-          <span class="unit-divider-top"
-            >| <a href="#" id="fahrenheit-link">°F</a></span
-          >
-        </p>
-        </div>
-        <div class="col-3">
-        <ul class="list">
-          <li>Humidity: <span id="humidity"></span>%</li>
-          <li>Wind: <span id="wind"></span> km/h</li>
-        </ul>
-        </div>
-           <div class="col-5"><img class="img-fluid d-block" id="weather-img" src="img/weather.png" width="400" height="200" alt="A person pointing to a weather forecast">
-        </div>
-        <!--<div class="row">
+            <ul class="list">
+              <li id="description"></li>
+            </ul>
+            <p>
+              <span class="degrees-top" id="degrees-top"></span>
+              <span class="units-top"
+                ><a href="#" id="celsius-link">°C</a></span
+              >
+              <span class="unit-divider-top"
+                >| <a href="#" id="fahrenheit-link">°F</a></span
+              >
+            </p>
+          </div>
+          <div class="col-3">
+            <ul class="list">
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+          <div class="col-5">
+            <img
+              class="img-fluid d-block"
+              id="weather-img"
+              src="img/weather.png"
+              width="400"
+              height="200"
+              alt="A person pointing to a weather forecast"
+            />
+          </div>
+          <!--<div class="row">
           <div class="col">
             <div class="card weather-card">
               <div class="card-body text-center">
@@ -151,25 +163,25 @@
             </div>
           </div>
         </div>-->
+        </div>
       </div>
+      <script src="src/app.js"></script>
+      <footer id="footer">
+        <div class="logo">
+          <a
+            href="https://github.com/smirrebinx/vanilla-weather-app.git"
+            target="_blank"
+            rel="noreferrer"
+            >Open source code</a
+          ><span class="logoTextSpan">by </span>
+          <img
+            src="img/a_cat.jpg"
+            alt="Logo, black cat"
+            title="Logo, black cat"
+          />
+          <span class="logoTextSpan">Michelle Wegler 2022</span>
+        </div>
+      </footer>
     </div>
-    <script src="src/app.js"></script>
-    <footer id="footer">
-      
- <div class="logo">
-      <a href="https://github.com/smirrebinx/vanilla-weather-app.git" 
-      target="_blank" rel="noreferrer">Open source code</a><span class="logoTextSpan">by </span>
-       <img
-          src="img/a_cat.jpg"
-          alt="Logo, black cat"
-          title="Logo, black cat"
-        />
-        <span class="logoTextSpan">Michelle Wegler 2022</span>
-   </div>
-
-    </footer>
   </body>
 </html>
-
-
-   

@@ -146,14 +146,13 @@ p {
 }
 
 #weather-img {
-  width: 300px;
-  height: 200px;
-  margin-left: 146px;
+  margin-left: 58px;
+  padding-right: 30px;
 }
 
 #leaf-img {
-  width: 200px;
-  height: 100px;
+  margin-left: 58px;
+  padding-right: 30px;
 }
 
 #footer {
