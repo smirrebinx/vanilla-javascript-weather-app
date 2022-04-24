@@ -92,8 +92,7 @@ p {
 .search-button {
   background-color: #94b1aa;
   color: #000;
-  font-size: 18px;
-  width: 60%;
+  /* font-size: 18px;*/
 }
 
 .search-button:hover {
