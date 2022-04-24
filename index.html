@@ -62,30 +62,33 @@
           </div>
         </form>
         <h2 id="city-heading"></h2>
-        <ul class="list">
+        <ul class="location-description-list">
           <li id="country"></li>
           <li id="local-time"></li>
           <li id="description"></li>
         </ul>
-        <div class="row">
-          <div class="col-3">
-            <p>
-              <span class="degrees-top" id="degrees-top"></span>
-              <span class="units-top"
-                ><a href="#" id="celsius-link">°C</a></span
-              >
+
+          <div class="row">
+            <div class="col-5">
+              <div class="clearfix weather-temperature">
+                <img src="" alt="Clear" id="icon" class="float-left" />
+                <div class="float-left">
+                 <span class="degrees-top" id="degrees-top"></span>
+                   <span class="units-top"
+                ><a href="#" id="celsius-link">°C</a></span>
               <span class="unit-divider-top"
                 >| <a href="#" id="fahrenheit-link">°F</a></span
-              >
-            </p>
-          </div>
+                >
+                </div>
+              </div>
+            </div>
           <div class="col-3">
-            <ul class="list">
+            <ul class="humid-wind-list">
               <li>Humidity: <span id="humidity"></span>%</li>
               <li>Wind: <span id="wind"></span> km/h</li>
             </ul>
           </div>
-          <div class="col-5">
+          <div class="col-4">
             <img
               class="img-fluid d-block"
               id="weather-img"
@@ -93,6 +96,8 @@
               alt="A person pointing to a weather forecast"
             />
           </div>
+        </div>
+      </div>
           <!--<div class="row">
           <div class="col">
             <div class="card weather-card">

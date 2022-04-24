@@ -73,8 +73,8 @@ let searchCityForm = document.querySelector("#search-form");
 searchCityForm.addEventListener("submit", searchSubmit);
 
 function updateTemp(newTemp) {
-  let showTemp = document.querySelector("#degrees-top");
-  showTemp.innerHTML = newTemp;
+  let showtmp = document.querySelector("#degrees-top");
+  showtmp.innerHTML = newTemp;
 }
 
 function showWeather(response) {
@@ -82,18 +82,25 @@ function showWeather(response) {
   let temperature = Math.round(response.data.main.temp);
   let cityHeading = document.querySelector("#city-heading");
   cityHeading.innerHTML = response.data.name;
+  let icon = document.querySelector("#icon");
   if (temperature > 0) {
     updateTemp(`☀️ ${temperature}`);
   } else {
     updateTemp(`🌨️${temperature}`);
   }
 
+  icon.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  icon.setAttribute("alt", response.data.weather[0].description);
+
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
   document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+    response.data.weather[0].description;
   document.querySelector("#country").innerHTML = response.data.sys.country;
 }
 searchCity("Stockholm");
