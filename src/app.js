@@ -78,6 +78,7 @@ function updateTemp(newTemp) {
 }
 
 function showWeather(response) {
+  console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
   let cityHeading = document.querySelector("#city-heading");
   cityHeading.innerHTML = response.data.name;

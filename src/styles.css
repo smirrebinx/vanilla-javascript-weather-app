@@ -92,7 +92,6 @@ p {
 .search-button {
   background-color: #94b1aa;
   color: #000;
-  /* font-size: 18px;*/
 }
 
 .search-button:hover {
@@ -138,6 +137,10 @@ p {
 #description {
   text-align: left;
   padding-left: 20px;
+}
+
+#description:first-letter {
+  text-transform: capitalize;
 }
 
 #description,
