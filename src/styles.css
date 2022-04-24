@@ -98,13 +98,9 @@ p {
   background-color: rgb(44, 138, 138);
 }
 
-#local-time,
-#time p {
+#local-time {
   text-align: left;
   font-size: 26px;
-}
-
-#time p {
   padding-left: 20px;
 }
 
