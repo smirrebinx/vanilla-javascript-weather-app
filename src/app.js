@@ -94,5 +94,6 @@ function showWeather(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+  document.querySelector("#country").innerHTML = response.data.sys.country;
 }
 searchCity("Stockholm");

@@ -134,6 +134,11 @@ p {
   font-size: 26px;
 }
 
+#country {
+  text-align: left;
+  padding-left: 20px;
+}
+
 #description {
   text-align: left;
   padding-left: 20px;
@@ -145,7 +150,8 @@ p {
 
 #description,
 #humidity,
-#wind {
+#wind,
+#country {
   font-size: 26px;
 }
 
