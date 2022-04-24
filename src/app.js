@@ -83,11 +83,7 @@ function showWeather(response) {
   let cityHeading = document.querySelector("#city-heading");
   cityHeading.innerHTML = response.data.name;
   let icon = document.querySelector("#icon");
-  if (temperature > 0) {
-    updateTemp(`☀️ ${temperature}`);
-  } else {
-    updateTemp(`🌨️${temperature}`);
-  }
+  updateTemp(`${temperature}`);
 
   icon.setAttribute(
     "src",

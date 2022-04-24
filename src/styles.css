@@ -160,16 +160,20 @@ p {
   font-size: 26px;
 }
 
+.temp-unit {
+  padding-left: 20px;
+}
+
 #weather-img {
   margin-left: 5px;
   padding-right: 30px;
 }
 
-#icon {
+/*#icon {
   margin-left: 58px;
   padding-right: 30px;
   width: 40%;
-}
+}*/
 
 #leaf-img {
   margin: 0 auto;
