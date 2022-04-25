@@ -42,7 +42,6 @@ p {
 
 .weather-container {
   border: 10px outset #94b1aa;
-  padding: 15px;
   margin: 0 auto;
   margin-top: 20px;
   border-radius: 10px;
@@ -55,6 +54,16 @@ p {
   padding: 0px;
   margin: 0px;
   background-color: transparent;
+}
+
+.float-left {
+  float: left;
+}
+
+.temp-unit {
+  margin: 0;
+  display: inline-block;
+  padding-left: 20px;
 }
 
 .units-top {
@@ -153,10 +162,6 @@ p {
 #wind,
 #country {
   font-size: 26px;
-}
-
-.temp-unit {
-  padding-left: 20px;
 }
 
 #weather-img {
