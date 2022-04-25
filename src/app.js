@@ -78,11 +78,12 @@ function updateTemp(newTemp) {
 }
 
 function showWeather(response) {
-  console.log(response.data);
+  //console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
   let cityHeading = document.querySelector("#city-heading");
   cityHeading.innerHTML = response.data.name;
   let icon = document.querySelector("#icon");
+  /*let img = document.querySelector("#weather-img");*/
   updateTemp(`${temperature}`);
 
   icon.setAttribute(
@@ -91,12 +92,17 @@ function showWeather(response) {
   );
   icon.setAttribute("alt", response.data.weather[0].description);
 
+  //if else depending on description
+  /*img.setAttribute("src", `img/rain.png`);
+  img.setAttribute("src", `img/clear.png`);
+  img.setAttribute("src", `img/snow.png`);
+  img.setAttribute("alt", response.data.weather[0].description);*/
+
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
-  document.querySelector("#country").innerHTML = response.data.sys.country;
 }
-searchCity("Stockholm");
+searchCity("Malmö");

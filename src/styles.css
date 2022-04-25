@@ -132,16 +132,11 @@ p {
 
 .humid-wind-list {
   list-style-type: none;
-  justify-content: center;
-  text-align: center;
+  /*justify-content: center;
+  text-align: center;*/
   margin: 0;
-  padding: 0;
+  padding-left: 0;
   font-size: 26px;
-}
-
-#country {
-  text-align: left;
-  padding-left: 20px;
 }
 
 #description {
