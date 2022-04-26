@@ -64,6 +64,10 @@ p {
   padding-left: 20px;
 }
 
+.temp-unit .active {
+  cursor: default;
+}
+
 .units-top {
   position: relative;
   top: -13px;
