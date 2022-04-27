@@ -126,6 +126,7 @@ p {
 
 #fahrenheit-link:hover {
   background-color: rgb(44, 138, 138);
+  border-radius: 70%;
   color: #fff;
 }
 
