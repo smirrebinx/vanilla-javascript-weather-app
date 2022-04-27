@@ -29,7 +29,7 @@ h1 {
 
 #city-heading {
   font-size: 3em;
-  padding-left: 20px;
+  padding-left: 34px;
   padding-top: 30px;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -58,10 +58,7 @@ p {
 
 .float-left {
   float: left;
-}
-
-.temp-unit {
-  padding-left: 20px;
+  padding-left: 34px;
 }
 
 .temp-unit .active {
@@ -111,7 +108,7 @@ p {
 #local-time {
   text-align: left;
   font-size: 26px;
-  padding-left: 20px;
+  padding-left: 34px;
 }
 
 #celsius-link {
@@ -142,8 +139,6 @@ p {
 
 .humid-wind-list {
   list-style-type: none;
-  /*justify-content: center;
-  text-align: center;*/
   margin: 0;
   padding-left: 0;
   font-size: 26px;
@@ -151,7 +146,7 @@ p {
 
 #description {
   text-align: left;
-  padding-left: 20px;
+  padding-left: 34px;
 }
 
 #description:first-letter {
