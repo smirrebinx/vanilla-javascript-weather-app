@@ -29,44 +29,53 @@ function localTime(now, days, current) {
 localTime(now, days, current);
 
 //Change unit, not done
-/*function convertToFahrenheit(event) {
+function convertToFahrenheit(event) {
   event.preventDefault();
   let degreeElement = document.querySelector("#degrees-top");
-  let degree = degreeElement.innerHTML;
-  degree = Number(degree);
-  //degreeElement.innerHTML = 66;
-  degreeElement.innerHTML = Math.round((degree * 9) / 5 + 32);
+  let fahrenheitDegree = (celsiusDegree * 9) / 5 + 32;
+  degreeElement.innerHTML = Math.round(fahrenheitDegree);
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
 }
 
 function convertToCelsius(event) {
   event.preventDefault();
   let degreeElement = document.querySelector("#degrees-top");
-  degree = Number(degree);
-  //degreeElement.innerHTML = 19;
+  degreeElement.innerHTML = Math.round(celsiusDegree);
+  fahrenheitLink.classList.remove("active");
+  celsiusLink.classList.add("active");
 }
+
+let celsiusDegree = null;
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", searchSubmit);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", convertToCelsius);*/
+fahrenheitLink.addEventListener("click", convertToCelsius);
 
 //Weather API
-function searchSubmit(event) {
+/*function searchSubmit(event) {
   event.preventDefault();
   let searchCityInput = document.querySelector("#search-city");
   searchCity(searchCityInput.value);
-}
+}*/
 
 function searchCity(searchCityInput) {
-  //let lat = position.coords.latitude;
-  //let lon = position.coords.longitude;
   let units = "metric";
   let apiKey = "f74f9f2338bf06af72a7c11d8921c9c0";
   let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather?";
   let apiUrl = `${apiEndpoint}q=${searchCityInput}&appid=${apiKey}&units=${units}`;
-  //let apiUrl = `${apiEndpoint}q=${searchCityInput}&lat${lat}&lon${lon}&appid=${apiKey}&units=${units}`;
   axios.get(`${apiUrl}&appid=${apiKey}`).then(showWeather);
+}
+
+function searchSubmit(event) {
+  event.preventDefault();
+  let searchCityInput = document.querySelector("#search-city");
+  searchCity(searchCityInput.value);
 }
 
 let searchCityForm = document.querySelector("#search-form");
@@ -78,7 +87,6 @@ function updateTemp(newTemp) {
 }
 
 function showWeather(response) {
-  //console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
   let cityHeading = document.querySelector("#city-heading");
   cityHeading.innerHTML = response.data.name;
@@ -105,4 +113,4 @@ function showWeather(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
 }
-searchCity("Malmö");
+searchCity("Malmo");
