@@ -109,6 +109,8 @@ p {
 
 .active {
   cursor: default;
+  font-size: 26px;
+  opacity: 0.7;
 }
 
 #celsius-link {
@@ -120,7 +122,6 @@ p {
 #fahrenheit-link {
   text-decoration: none;
   color: #202020;
-  opacity: 0.7;
   font-size: 26px;
 }
 
