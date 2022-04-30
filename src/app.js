@@ -31,31 +31,28 @@ localTime(now, days, current);
 //Change unit, not done
 function convertToFahrenheit(event) {
   event.preventDefault();
-  let degreeElement = document.querySelector("#degrees-top");
-  let fahrenheitDegree = (celsiusDegree * 9) / 5 + 32;
-  degreeElement.innerHTML = Math.round(fahrenheitDegree);
+  let fahrenheitDegree = document.querySelector("#currentDegree");
+  let fahrenheit = Math.round((celsiusDegree * 9) / 5 + 32);
+  fahrenheitDegree.innerHTML = `${fahrenheit}`;
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
 }
 
-function convertToCelsius(event) {
-  event.preventDefault();
-  let degreeElement = document.querySelector("#degrees-top");
-  degreeElement.innerHTML = Math.round(celsiusDegree);
-  fahrenheitLink.classList.remove("active");
-  celsiusLink.classList.add("active");
-}
-
-let celsiusDegree = null;
-
-let form = document.querySelector("#search-form");
-form.addEventListener("submit", searchSubmit);
-
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
+function convertToCelsius(event) {
+  event.preventDefault();
+  let currentDegree = document.querySelector("#currentDegree");
+  currentDegree.innerHTML = `${Math.round(celsiusDegree)}`;
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+}
+
 let celsiusLink = document.querySelector("#celsius-link");
-fahrenheitLink.addEventListener("click", convertToCelsius);
+celsiusLink.addEventListener("click", convertToCelsius);
+
+let celsiusDegree = null;
 
 //Weather API
 /*function searchSubmit(event) {
@@ -82,17 +79,17 @@ let searchCityForm = document.querySelector("#search-form");
 searchCityForm.addEventListener("submit", searchSubmit);
 
 function updateTemp(newTemp) {
-  let showtmp = document.querySelector("#degrees-top");
+  let showtmp = document.querySelector("#currentDegree");
   showtmp.innerHTML = newTemp;
 }
 
 function showWeather(response) {
-  let temperature = Math.round(response.data.main.temp);
+  celsiusDegree = Math.round(response.data.main.temp);
   let cityHeading = document.querySelector("#city-heading");
   cityHeading.innerHTML = response.data.name;
   let icon = document.querySelector("#icon");
   /*let img = document.querySelector("#weather-img");*/
-  updateTemp(`${temperature}`);
+  updateTemp(`${celsiusDegree}`);
 
   icon.setAttribute(
     "src",
