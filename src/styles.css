@@ -1,5 +1,6 @@
 /*vanilla-weather-app netlify*/
 
+/*Photo by HAN Mengqi on Unsplash*/
 body {
   background-image: url("../img/background.jpg");
 }
@@ -186,6 +187,10 @@ p {
   padding: 5px;
   border-radius: 10px;
   text-decoration: none;
+}
+
+#footer a:hover {
+  text-decoration: underline;
 }
 
 .logo {
