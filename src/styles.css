@@ -1,4 +1,9 @@
 /*vanilla-weather-app netlify*/
+
+body {
+  background-image: url("../img/background.jpg");
+}
+
 h1 {
   font-family: "Xanh Mono", monospace;
   font-size: 4em;
@@ -41,6 +46,7 @@ p {
 }
 
 .weather-container {
+  background-color: #fff;
   border: 10px outset #94b1aa;
   margin: 0 auto;
   margin-top: 20px;
@@ -172,6 +178,15 @@ p {
 
 #footer p {
   font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+
+#footer a {
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 .logo {
