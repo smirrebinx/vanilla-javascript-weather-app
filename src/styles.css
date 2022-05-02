@@ -212,9 +212,6 @@ p {
 }
 
 #footer a {
-  background-color: #e4e3df;
-  padding: 5px;
-  border-radius: 10px;
   text-decoration: none;
 }
 
@@ -227,6 +224,11 @@ p {
   align-items: center;
   text-align: center;
   justify-content: center;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  width: 420px;
+  margin: 0 auto;
 }
 
 .logo img {
@@ -236,5 +238,5 @@ p {
 
 .logoTextSpan {
   padding: 10px;
-  color: #fff;
+  color: #000;
 }
