@@ -54,13 +54,6 @@ celsiusLink.addEventListener("click", convertToCelsius);
 
 let celsiusDegree = null;
 
-//Weather API
-/*function searchSubmit(event) {
-  event.preventDefault();
-  let searchCityInput = document.querySelector("#search-city");
-  searchCity(searchCityInput.value);
-}*/
-
 function searchCity(searchCityInput) {
   let units = "metric";
   let apiKey = "f74f9f2338bf06af72a7c11d8921c9c0";
@@ -81,6 +74,31 @@ searchCityForm.addEventListener("submit", searchSubmit);
 function updateTemp(newTemp) {
   let showtmp = document.querySelector("#currentDegree");
   showtmp.innerHTML = newTemp;
+}
+
+function showForecast() {
+  //let forecast = response.data.daily;
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let forecastDays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  forecastDays.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `    
+          <div class="col-2">
+            <div class="weather-forecast-date">${day}</div>
+            <img src="https://openweathermap.org/img/wn/50d@2x.png" 
+            alt=""
+            width="42" />
+            <div class="weather-forecast-temperature">
+              <span class="weather-forecast-temperature-max">6°</span> 
+            <span class="weather-forecast-temperature-min">2°</span></div>
+          </div>
+        `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 function showWeather(response) {
@@ -107,7 +125,12 @@ function showWeather(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
-  document.querySelector("#description").innerHTML =
-    response.data.weather[0].description;
+  let description = (document.querySelector("#description").innerHTML =
+    response.data.weather[0].description);
+
+  /*if (description === "Clear sky") {
+    (document.querySelector("#weather-img").innerHTML = "src"), `img/clear.png`;
+  }*/
 }
 searchCity("Malmo");
+showForecast();

@@ -60,6 +60,8 @@ p {
   text-align: center;
   font-family: "Xanh Mono", monospace;
   color: #000;
+  padding-left: 10px;
+  margin-bottom: 15px;
 }
 
 .weather-forecast-date {
@@ -71,8 +73,9 @@ p {
   font-size: 23px;
 }
 
-/*.weather-forecast-temperature-max {
-}*/
+.weather-forecast-temperature-max {
+  font-weight: bold;
+}
 
 .weather-forecast-temperature-min {
   opacity: 0.8;
@@ -111,11 +114,13 @@ p {
   font-size: 54px;
   position: relative;
   top: 6px;
+  font-family: "Xanh Mono", monospace;
 }
 
 .degrees {
   font-size: 34px;
   line-height: 1;
+  font-family: "Xanh Mono", monospace;
 }
 
 .input-form {
@@ -186,7 +191,7 @@ p {
 
 #weather-img {
   margin-left: 5px;
-  padding-right: 30px;
+  padding-right: 70px;
   width: 300px;
 }
 
