@@ -55,13 +55,36 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.weather-card {
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Xanh Mono", monospace;
+  color: #000;
+}
+
+.weather-forecast-date {
+  font-size: 26px;
+  opacity: 0.8;
+}
+
+.weather-forecast-temperature {
+  font-size: 23px;
+}
+
+/*.weather-forecast-temperature-max {
+}*/
+
+.weather-forecast-temperature-min {
+  opacity: 0.8;
+}
+
+/*.weather-card {
   width: 10rem;
   border-style: none;
   padding: 0px;
   margin: 0px;
   background-color: transparent;
-}
+}*/
 
 .float-left {
   float: left;
@@ -164,10 +187,12 @@ p {
 #weather-img {
   margin-left: 5px;
   padding-right: 30px;
+  width: 300px;
 }
 
 #leaf-img {
   margin: 0 auto;
+  width: 40px;
   max-width: 10%;
 }
 
@@ -207,4 +232,5 @@ p {
 
 .logoTextSpan {
   padding: 10px;
+  color: #fff;
 }
