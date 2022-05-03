@@ -12,13 +12,10 @@ h1 {
 }
 
 h2,
-h3 {
-  font-family: "Xanh Mono", monospace;
-}
-
+h3,
 li,
 p {
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "Xanh Mono", monospace;
 }
 
 h1,
