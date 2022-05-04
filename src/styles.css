@@ -77,14 +77,6 @@ p {
   opacity: 0.8;
 }
 
-/*.weather-card {
-  width: 10rem;
-  border-style: none;
-  padding: 0px;
-  margin: 0px;
-  background-color: transparent;
-}*/
-
 .float-left {
   float: left;
   padding-left: 34px;
@@ -138,20 +130,24 @@ p {
   padding-left: 34px;
 }
 
-.active {
-  cursor: default;
-}
-
 #celsius-link {
   text-decoration: none;
-  color: #202020;
   font-size: 26px;
 }
 
 #fahrenheit-link {
   text-decoration: none;
-  color: #202020;
   font-size: 26px;
+}
+
+.active {
+  cursor: default;
+  font-weight: bold;
+  color: #202020;
+}
+
+.active:hover {
+  color: #202020;
 }
 
 .location-description-list {
