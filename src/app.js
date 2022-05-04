@@ -84,7 +84,7 @@ function formatDay(timestamp) {
   return days[day];
 }
 
-//Forecaste - not done
+//Forecast
 
 function showForecast(response) {
   let forecast = response.data.daily;
@@ -123,7 +123,6 @@ function showForecast(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let units = "metric";
   let apiKey = "f74f9f2338bf06af72a7c11d8921c9c0";
   let apiEndpoint = "https://api.openweathermap.org/data/2.5/onecall?";
@@ -158,13 +157,11 @@ function showWeather(response) {
     response.data.wind.speed
   );
 
-  let description = (document.querySelector("#description").innerHTML =
-    response.data.weather[0].description);
-  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  document.querySelector("#description").innerHTML =
+    response.data.weather[0].description;
 
   /*if (description === "Clear sky") {
     (document.querySelector("#weather-img").innerHTML = "src"), `img/clear.png`;
   }*/
 }
 searchCity("Malmo");
-showForecast();
