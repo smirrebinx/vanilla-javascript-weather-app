@@ -41,7 +41,7 @@
             alt="An illustration of a leaf"
           />
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 my-auto">
               <div class="input-form">
                 <input
                   type="search"
@@ -51,7 +51,7 @@
                 />
               </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 my auto">
               <input
                 type="submit"
                 value="Search"
@@ -66,29 +66,35 @@
           <li id="description"></li>
         </ul>
 
-          <div class="row">
-            <div class="col-5 icon d-flex align-items-center">
-              <div class="clearfix weather-temperature">
-                <img src="" alt="Description of weather" id="icon" class="float-left" />
-                <div class="float-left">
-                  <div class="temp-unit">
-                 <span class="currentDegree" id="currentDegree"></span>
-                   <span class="units-top"
-                ><a href="#" id="celsius-link" class="active">°C</a></span>
-              <span class="unit-divider-top"
-                >| <a href="#" id="fahrenheit-link">°F</a></span
-                >
-                </div>
+        <div class="row">
+          <div class="col-5 icon d-flex align-items-center text-center">
+            <div class="clearfix weather-temperature">
+              <img
+                src=""
+                alt="Description of weather"
+                id="icon"
+                class="float-left"
+              />
+              <div class="float-left">
+                <div class="temp-unit">
+                  <span class="currentDegree" id="currentDegree"></span>
+                  <span class="units-top"
+                    ><a href="#" id="celsius-link" class="active">°C</a></span
+                  >
+                  <span class="unit-divider-top"
+                    >| <a href="#" id="fahrenheit-link">°F</a></span
+                  >
                 </div>
               </div>
             </div>
-          <div class="col-3">
+          </div>
+          <div class="col-md-3 text-center">
             <ul class="humid-wind-list">
               <li>Humidity: <span id="humidity"></span>%</li>
               <li>Wind: <span id="wind"></span> m/h</li>
             </ul>
           </div>
-          <div class="col-4">
+          <div class="col-md-4 text-center">
             <img
               class="img-fluid d-block"
               id="weather-img"
@@ -97,26 +103,23 @@
             />
           </div>
         </div>
-        <div class="weather-forecast" id="forecast"></div>
+        <div class="col text-center">
+          <div class="weather-forecast" id="forecast"></div>
         </div>
       </div>
-      </div>
-      <script src="src/app.js"></script>
-      <footer id="footer">
-        <div class="logo">
-          <a
-            href="https://github.com/smirrebinx/vanilla-weather-app.git"
-            target="_blank"
-            rel="noreferrer"
-            >Open source code</a
-          ><span class="logoTextSpan">by </span>
-          <img
-            src="img/a_cat.jpg"
-            alt="Logo, black cat"
-          />
-          <span class="logoTextSpan">Michelle Wegler 2022</span>
-        </div>
-      </footer>
     </div>
+    <script src="src/app.js"></script>
+    <footer id="footer">
+      <div class="logo">
+        <a
+          href="https://github.com/smirrebinx/vanilla-weather-app.git"
+          target="_blank"
+          rel="noreferrer"
+          >Open source code</a
+        ><span class="logoTextSpan">by </span>
+        <img src="img/a_cat.jpg" alt="Logo, black cat" />
+        <span class="logoTextSpan">Michelle Wegler 2022</span>
+      </div>
+    </footer>
   </body>
 </html>

@@ -28,7 +28,7 @@ function localTime(now, days, current) {
 }
 localTime(now, days, current);
 
-//Change unit, not done
+//Change unit
 function convertToFahrenheit(event) {
   event.preventDefault();
   let fahrenheitDegree = document.querySelector("#currentDegree");
@@ -85,7 +85,6 @@ function formatDay(timestamp) {
 }
 
 //Forecast
-
 function showForecast(response) {
   let forecast = response.data.daily;
 
@@ -109,10 +108,10 @@ function showForecast(response) {
             <div class="weather-forecast-temperature">
               <span class="weather-forecast-temperature-max">${Math.round(
                 forecastDay.temp.max
-              )}°C</span> 
+              )}°</span> 
             <span class="weather-forecast-temperature-min">${Math.round(
               forecastDay.temp.min
-            )}°C</span></div>
+            )}°</span></div>
           </div>
         `;
     }
