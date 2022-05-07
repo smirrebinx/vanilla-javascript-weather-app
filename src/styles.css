@@ -203,6 +203,7 @@ p {
 
 #footer a {
   text-decoration: none;
+  padding-left: 5px;
 }
 
 #footer a:hover {
@@ -215,9 +216,9 @@ p {
   text-align: center;
   justify-content: center;
   background-color: #fff;
-  padding: 5px;
+  padding: 5px 2px 5px 2px;
   border-radius: 10px;
-  width: 420px;
+  width: 370px;
   margin: 0 auto;
 }
 
