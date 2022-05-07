@@ -34,14 +34,16 @@
       <div class="weather-container">
         <form class="search-form" id="search-form">
           <h1>Weather</h1>
-          <img
-            class="img-fluid d-block"
-            id="leaf-img"
-            src="img/leaf.png"
-            alt="An illustration of a leaf"
-          />
+          <div class="col-md-12 align-items-center">
+            <img
+              class="img-fluid d-block"
+              id="leaf-img"
+              src="img/leaf.png"
+              alt="An illustration of a leaf"
+            />
+          </div>
           <div class="row">
-            <div class="col-sm-6 my-auto">
+            <div class="col-md-8 align-items-center">
               <div class="input-form">
                 <input
                   type="search"
@@ -51,7 +53,7 @@
                 />
               </div>
             </div>
-            <div class="col-sm-2 my auto">
+            <div class="col-sm-2 align-items-center">
               <input
                 type="submit"
                 value="Search"
@@ -95,7 +97,7 @@
               <li>Wind: <span id="wind"></span> m/h</li>
             </ul>
           </div>
-          <div class="col-md-3 text-center">
+          <div class="col-md-3">
             <img
               class="img-fluid d-block"
               id="weather-img"

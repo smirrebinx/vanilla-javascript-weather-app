@@ -188,6 +188,7 @@ p {
 #leaf-img {
   margin: 0 auto;
   width: 4%;
+  padding-bottom: 6px;
 }
 
 #footer {
@@ -230,28 +231,4 @@ p {
 .logoTextSpan {
   padding: 10px;
   color: #000;
-}
-
-@media (max-width: 544px) and (min-width: 767px) {
-  #weather-img {
-    width: 50%;
-    height: auto;
-  }
-
-  #leaf-img {
-    width: 10%;
-    height: auto;
-  }
-}
-
-@media (max-width: 390px) and (min-width: 844px) {
-  #weather-img {
-    width: 50%;
-    height: auto;
-  }
-
-  #leaf-img {
-    width: 10%;
-    height: auto;
-  }
 }
