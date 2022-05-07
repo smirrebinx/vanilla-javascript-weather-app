@@ -133,8 +133,8 @@ function showWeather(response) {
   celsiusDegree = Math.round(response.data.main.temp);
   let cityHeading = document.querySelector("#city-heading");
   cityHeading.innerHTML = response.data.name;
+
   let icon = document.querySelector("#icon");
-  /*let img = document.querySelector("#weather-img");*/
   updateTemp(`${celsiusDegree}`);
 
   icon.setAttribute(
@@ -145,12 +145,6 @@ function showWeather(response) {
 
   getForecast(response.data.coord);
 
-  //if else depending on description
-  /*img.setAttribute("src", `img/rain.png`);
-  img.setAttribute("src", `img/clear.png`);
-  img.setAttribute("src", `img/snow.png`);
-  img.setAttribute("alt", response.data.weather[0].description);*/
-
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
@@ -158,9 +152,5 @@ function showWeather(response) {
 
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
-
-  /*if (description === "Clear sky") {
-    (document.querySelector("#weather-img").innerHTML = "src"), `img/clear.png`;
-  }*/
 }
 searchCity("Malmo");
