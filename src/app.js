@@ -153,4 +153,5 @@ function showWeather(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
 }
+
 searchCity("Malmo");

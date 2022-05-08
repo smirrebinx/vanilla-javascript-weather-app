@@ -82,20 +82,9 @@ p {
   padding-left: 34px;
 }
 
-.units-top {
-  position: relative;
-  top: -13px;
-}
-
-.unit-divider-top {
-  position: relative;
-  top: -13px;
-}
-
 .units {
   position: relative;
-  top: -8px;
-  font-size: 1.5rem;
+  top: -13px;
 }
 
 .currentDegree {
@@ -175,8 +164,7 @@ p {
 
 #description,
 #humidity,
-#wind,
-#country {
+#wind {
   font-size: 26px;
 }
 
