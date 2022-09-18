@@ -1,5 +1,5 @@
 # vanilla-weather-app
-The Weather App has a search engine and uses API from
+The Weather App has a search engine and uses API requests from
 https://openweathermap.org/ to show the current weather. The app
 shows the current temperature in Celsius with the option to convert to
 the current temperature in Fahrenheit for the searched city. A
